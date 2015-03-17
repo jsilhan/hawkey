@@ -99,7 +99,7 @@ args_pkg_sltr_parse(PyObject *args, PyObject *kwds,
 static int
 args_run_parse(PyObject *args, PyObject *kwds, int *flags, PyObject **callback_p)
 {
-    char *kwlist[] = {"callback", "allow_uninstall", "force_best", NULL};
+    char *kwlist[] = {"callback", "allow_uninstall", "force_best", "verify", NULL};
     int allow_uninstall = 0;
     int force_best = 0;
     PyObject *callback = NULL;
