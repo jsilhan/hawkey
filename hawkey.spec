@@ -6,7 +6,7 @@
 
 Name:		hawkey
 Version:	0.5.8
-Release:	1%{?snapshot}%{?dist}
+Release:	2%{?snapshot}%{?dist}
 Summary:	Library providing simplified C and Python API to libsolv
 Group:		System Environment/Libraries
 License:	LGPLv2+
@@ -130,6 +130,10 @@ popd
 %endif
 
 %changelog
+* Thu Jun 04 2015 Jan Silhan <jsilhan@redhat.com> 0.5.8-2
+- tito: change vesiontagger to releasetagger (Jan Silhan)
+- don't require python3 in rhel (Jan Silhan)
+
 * Thu Jun 04 2015 Jan Silhan <jsilhan@redhat.com> 0.5.8-1
 - added implicit-function-declaration compile flag (Jan Silhan)
 - subject: Fix compiler warning introduced by previous commit (Colin Walters)
